@@ -195,11 +195,12 @@ body{
 }
 
 #Footer .socialm{
-    border-bottom: 1px solid rgba(0, 0, 0, .2);
     padding-right: 1rem;
 }
 
 #Footer .socialm #SocialMLinks a { 
+    display: flex;
+    align-items: center;
     color:  rgb(22, 192, 0);
     transition: .5s;
 }
@@ -210,6 +211,10 @@ body{
 
 #Footer #BgFooter .socialm #SocialMLinks{
     font-size: 1.4em;
+}
+
+#Footer #BgFooter .sep{
+    border-top: 1px solid rgba(0, 0, 0, .3);
 }
 
 /* Animações */

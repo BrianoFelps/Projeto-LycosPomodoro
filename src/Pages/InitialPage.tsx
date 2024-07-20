@@ -20,10 +20,10 @@ function App() {
             <b className='fs-3 px-1'>Lycos timer</b>
           </a>
           <ul className='navbar-nav d-flex justify-content-end flex-row'>
-            <li className='nav-item btn btn-danger col-md-3'>
+            <li className='nav-item btn btn-danger mx-2 col-5 col-md-3 col-lg-2'>
               <a className='nav-link active fw-bold p-0' href=''>Cadastro</a>
             </li>
-            <li className='nav-item btn btn-success ml col-md-3'>
+            <li className='nav-item btn btn-success col-5 col-md-3 col-lg-2'>
               <a className='nav-link active fw-bold p-0' href=''>Login</a>
             </li>
           </ul>
@@ -59,7 +59,7 @@ function App() {
 
       <footer className='w-100 mt-5' id='Footer'>
         <div className='p-3 row bordertop text-white' id='BgFooter'>
-          <div className='col-12 socialm justify-content-between d-flex'>
+          <div className='col-12 socialm justify-content-between align-items-center d-flex'>
             <div className='col-7 col-md-9' id='TitleFooter'>
                 Conecte-se conosco nas redes sociais:
             </div>
@@ -78,7 +78,7 @@ function App() {
               </a>
             </div>
           </div>
-          <div className='w-100 pt-3'></div>
+          <div className='my-2 sep'></div>
           <div className='col-12'>
             Contatos: (xx) xxxxx-xxxx / email@email.com
           </div>
