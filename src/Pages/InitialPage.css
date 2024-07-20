@@ -70,6 +70,7 @@ body{
 #TopNavBar{
     background-color: rgba(25, 210, 0, 0.65);
     box-sizing: border-box;
+    transition: .2s;
 }
 
 #TopNavBar #brand{
@@ -84,6 +85,11 @@ body{
     text-shadow: #ff3737 0px 0px 10px;
     opacity: .95;
     transition: .5s;
+}
+
+.hidden{
+    transition: .2s;
+    top:-100px
 }
 
 /* Container Interior TopNavBar */
@@ -140,7 +146,12 @@ body{
     height: 100vh;
     /* box-sizing: border-box; */
     padding: 0 1em;
-    padding-bottom: 100px;
+    padding-bottom: 215px;
+    transition: .3s;
+}
+
+.pbottomFrase{
+    padding-bottom: 100px !important;
 }
 
 /* Conteúdo escrito */

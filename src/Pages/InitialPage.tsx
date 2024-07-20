@@ -3,8 +3,29 @@ import './InitialPage.css'
 import tomate from '../assets/tomato.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSquareFacebook, faSquareInstagram, faSquareXTwitter, faSquareYoutube } from '@fortawesome/free-brands-svg-icons';
+import { useEffect } from 'react';
 
 function App() {
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const topbar = document.getElementById("TopNavBar");
+      const fraseEfeito = document.getElementById("FraseDeEfeito")
+      if(window.scrollY > 0){
+        topbar?.classList.remove('hidden')
+        fraseEfeito?.classList.add('pbottomFrase')
+      } else{
+        topbar?.classList.add('hidden')
+        fraseEfeito?.classList.remove('pbottomFrase')
+        
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return()=>{
+      window.removeEventListener('scroll', handleScroll)
+    };
+  }, []);
 
   return (
     <>
@@ -13,7 +34,7 @@ function App() {
       <div id='EspacoBg'>
       </div>
 
-      <nav id='TopNavBar' className='navbar navbar-expand-md navbar-dark fixed-top col-12'>
+      <nav id='TopNavBar' className='navbar navbar-expand-md navbar-dark fixed-top col-12 hidden'>
         <div id='ContainerInteriorTopNB'>
           <a href="" id='brand' className='navbar-brand'>
             <img src={tomate} alt="Logomarca de x" title='Logomarca de x' width={40}/> 
