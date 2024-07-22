@@ -1,0 +1,10 @@
+.MainPage body{
+    background: white;
+    height: 1000px;
+    /* Mudar essa altura depois */
+}
+
+.MainPage #Container{
+    border: 1px solid black;
+    height: 100%;
+}

@@ -4,10 +4,13 @@ import tomate from '../assets/tomato.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSquareFacebook, faSquareInstagram, faSquareXTwitter, faSquareYoutube } from '@fortawesome/free-brands-svg-icons';
 import { useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 function App() {
+  const navigate = useNavigate();
 
   useEffect(() => {
+
     const handleScroll = () => {
       const topbar = document.getElementById("TopNavBar");
       const fraseEfeito = document.getElementById("FraseDeEfeito")
@@ -27,6 +30,10 @@ function App() {
     };
   }, []);
 
+  const RouteLogin = () =>{
+    navigate('/m')
+  }  
+
   return (
     <>
     <div id='Container' className='container-fluid'>
@@ -45,7 +52,7 @@ function App() {
               <a className='nav-link active fw-bold p-0' href=''>Cadastro</a>
             </li>
             <li className='nav-item btn btn-success col-5 col-md-3 col-lg-2'>
-              <a className='nav-link active fw-bold p-0' href=''>Login</a>
+              <a onClick={RouteLogin} className='nav-link active fw-bold p-0' href=''>Login</a>
             </li>
           </ul>
         </div>

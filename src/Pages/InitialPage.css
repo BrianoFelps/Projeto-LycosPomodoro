@@ -31,9 +31,10 @@ body{
 
 #EspacoBg{
     background: url(../assets/pomofundo.png) center top;
-    background-size: 15%;
+    background-size: 13%;
     opacity: 0.3;
     position: fixed;
+    top: 0;
     animation: fundoAbaixo 60s linear infinite;
     width: 200%;
     height: 200%;

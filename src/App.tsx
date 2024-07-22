@@ -4,6 +4,7 @@ import '@fontsource/montserrat'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import InitialPage from './Pages/InitialPage';
+import MainPage from './Pages/MainPage'
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<InitialPage/>}/>
+          <Route path='/m' element={<MainPage/>}/>
         </Routes>
       </BrowserRouter>
       
