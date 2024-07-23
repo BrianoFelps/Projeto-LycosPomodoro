@@ -3,8 +3,11 @@ import './InitialPage.css'
 import tomate from '../assets/tomato.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSquareFacebook, faSquareInstagram, faSquareXTwitter, faSquareYoutube } from '@fortawesome/free-brands-svg-icons';
+
 import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+
+import { Carousel } from 'react-bootstrap';
 
 function App() {
   const navigate = useNavigate();
@@ -20,7 +23,6 @@ function App() {
       } else{
         topbar?.classList.add('hidden')
         fraseEfeito?.classList.remove('pbottomFrase')
-        
       }
     };
 
@@ -28,6 +30,7 @@ function App() {
     return()=>{
       window.removeEventListener('scroll', handleScroll)
     };
+
   }, []);
 
   const RouteLogin = () =>{
@@ -38,13 +41,12 @@ function App() {
     <>
     <div id='Container' className='container-fluid'>
 
-      <div id='EspacoBg'>
-      </div>
+      <div id='EspacoBg'/>
 
       <nav id='TopNavBar' className='navbar navbar-expand-md navbar-dark fixed-top col-12 hidden'>
         <div id='ContainerInteriorTopNB'>
           <a href="" id='brand' className='navbar-brand'>
-            <img src={tomate} alt="Logomarca de x" title='Logomarca de x' width={40}/> 
+            <img src={tomate} alt="Logomarca de x" title='Logomarca da Lycos timer' width={40}/> 
             <b className='fs-3 px-1'>Lycos timer</b>
           </a>
           <ul className='navbar-nav d-flex justify-content-end flex-row'>
@@ -57,15 +59,20 @@ function App() {
           </ul>
         </div>
       </nav>
-
-      <section id='FraseDeEfeito'>
-          <div className='row'>
-            <div className='col-sm-12'>
+    <div className='container containerDoCarousel'>
+      <Carousel id='FraseDeEfeito' indicators={false}>
+          {/*É em milisegundos*/} 
+            <Carousel.Item className='col-sm-12'interval={10000}>
               <h1 className='display-1 text-light fw-bolder'>+ foco, + foco, + foco</h1>
               <p className='lead'>coloca um vídeo nesse espaço, depois é bom modificá-lo para comportar tanto o vídeo como uma frase de efeito, pode incluir até um botão</p>
-            </div>
-          </div>
-        </section>
+            </Carousel.Item>
+            <Carousel.Item className='col-sm-12' interval={10000}>
+              <h1 className='display-1 text-light fw-bolder'>Seus objetivos mais sublimes te esperam!</h1>
+              <p className='btn btn-outline-light'>INICIE JÁ!</p>
+            </Carousel.Item>
+        </Carousel>
+    </div>
+      
       
       <div id='EspacoBg2'>
         <div className='titulo'>

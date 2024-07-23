@@ -1,10 +1,99 @@
-.MainPage body{
-    background: white;
-    height: 1000px;
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1em;
+}
+
+.MainPage, .MainPage body{
+    background: #e93232;
+    height: 100%;
     /* Mudar essa altura depois */
 }
 
-.MainPage #Container{
-    border: 1px solid black;
-    height: 100%;
+/* ContainerTopo */
+
+.MainPage #root #ContainerTopo{
+    background: #ff3737;
+
+    display: flex;
+    justify-content: center;
+
+    padding: .5rem 0;
+
+    border-bottom: 1px solid rgba(0, 0, 0, .3);
+}
+
+.MainPage #ContainerTopo #brand a{
+    text-decoration: none;
+    text-shadow: #ff3737 0px 0px 10px;
+
+    opacity: .95;
+    transition: .5s;
+}
+
+.MainPage #ContainerTopo #brand a:hover{
+    text-shadow: 0 0 10px rgb(22, 192, 0);
+}
+
+.MainPage #ContainerTopo #brand a b{
+    color: white;
+}
+
+/* ContainerPrincipal */
+
+#ContainerPrincipal #TaskName{
+    position: relative;
+}
+
+#ContainerPrincipal #TaskName input{
+    background: none;
+    border: 0 none;
+    border-bottom: 2px solid rgba(0, 0, 0, .2);
+
+    color: white;
+    
+
+    outline: none;
+    box-shadow: 0 0 0 0;
+
+    text-align: center;
+}
+
+#ContainerPrincipal #TaskName span{
+    color: white;
+    opacity: .88;
+    
+    position: absolute;
+    top: -12%;
+    
+    display: flex;
+    justify-content: center;
+
+    width: 96.5%;
+
+    font-size: .8em;
+    padding: 5px 0;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+/* O acento define que com a alteração de um, o outro receba alterações */
+#ContainerPrincipal #TaskName input:focus ~ span,
+/*#ContainerPrincipal #TaskName input:hover ~ span,*/
+#ContainerPrincipal #TaskName input:not(:placeholder-shown) ~ span{
+    opacity: 1;
+    font-size: .7em;
+    transform: translateY(-1.5em);
+
+    color: rgb(22, 192, 0);
+}
+
+/* O intuito é de algum jeito animar isso depois https://app.svgator.com/#/ */
+#ContainerPrincipal .container .card svg{
+    background: url(../assets/TomateTempo-removebg-preview.png) no-repeat center center;
+    background-size: contain;
 }

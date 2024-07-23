@@ -137,6 +137,10 @@ body{
 
 /* Pós-header */
 
+.containerDoCarousel{
+    height: 100vh;
+}
+
 #FraseDeEfeito{
     display: flex;
     align-items: center;
@@ -144,11 +148,33 @@ body{
     text-align: center;
 
     width: 100%;
-    height: 100vh;
+    height: 100%;
+
     /* box-sizing: border-box; */
-    padding: 0 1em;
     padding-bottom: 215px;
     transition: .3s;
+}
+
+.carousel-control-prev, .carousel-control-next{
+    height: 75%;
+
+    /* Depois muda no código para quando scrollar para baixo, o carousel control ir junto */
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon{
+    background-size: 250%;
+    /* Depois muda no código para quando scrollar para baixo, o carousel control ir junto */
+}
+
+.carousel-control-prev{
+    justify-content: start;
+    align-items: center;
+
+}
+
+.carousel-control-next{
+    justify-content: end;
+
 }
 
 .pbottomFrase{
