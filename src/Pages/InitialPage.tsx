@@ -13,14 +13,21 @@ function App() {
   const navigate = useNavigate();
 
   useEffect(() => {
+    const replaceClass = () =>{
+      const html = document.documentElement
+      html.classList.replace("MainPage", 'InitialPage')
+  }
+
+    replaceClass()
 
     const handleScroll = () => {
       const topbar = document.getElementById("TopNavBar");
-      const fraseEfeito = document.getElementById("FraseDeEfeito")
-      if(window.scrollY > 0){
+      const fraseEfeito = document.getElementById("FraseDeEfeito");
+
+      if(window.scrollY < 990){
         topbar?.classList.remove('hidden')
         fraseEfeito?.classList.add('pbottomFrase')
-      } else{
+      } else {
         topbar?.classList.add('hidden')
         fraseEfeito?.classList.remove('pbottomFrase')
       }
@@ -43,7 +50,7 @@ function App() {
 
       <div id='EspacoBg'/>
 
-      <nav id='TopNavBar' className='navbar navbar-expand-md navbar-dark fixed-top col-12 hidden'>
+      <nav id='TopNavBar' className='navbar navbar-expand-md navbar-dark fixed-top col-12'>
         <div id='ContainerInteriorTopNB'>
           <a href="" id='brand' className='navbar-brand'>
             <img src={tomate} alt="Logomarca de x" title='Logomarca da Lycos timer' width={40}/> 
@@ -62,11 +69,11 @@ function App() {
     <div className='container containerDoCarousel'>
       <Carousel id='FraseDeEfeito' indicators={false}>
           {/*É em milisegundos*/} 
-            <Carousel.Item className='col-sm-12'interval={10000}>
+            <Carousel.Item className='col-sm-8' interval={10000}>
               <h1 className='display-1 text-light fw-bolder'>+ foco, + foco, + foco</h1>
               <p className='lead'>coloca um vídeo nesse espaço, depois é bom modificá-lo para comportar tanto o vídeo como uma frase de efeito, pode incluir até um botão</p>
             </Carousel.Item>
-            <Carousel.Item className='col-sm-12' interval={10000}>
+            <Carousel.Item className='col-sm-8' interval={10000}>
               <h1 className='display-1 text-light fw-bolder'>Seus objetivos mais sublimes te esperam!</h1>
               <p className='btn btn-outline-light'>INICIE JÁ!</p>
             </Carousel.Item>

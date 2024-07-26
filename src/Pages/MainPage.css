@@ -18,15 +18,27 @@
 .MainPage #root #ContainerTopo{
     background: #ff3737;
 
-    display: flex;
-    justify-content: center;
+    width: 100%;
 
-    padding: .5rem 0;
+    padding: .5rem 4rem;
 
     border-bottom: 1px solid rgba(0, 0, 0, .3);
 }
 
+.MainPage #root #ContainerTopo #Topo{
+    position: relative;
+
+    padding: 0;
+}
+
+.MainPage #ContainerTopo #brand{
+    margin: 0 auto;
+}
+
 .MainPage #ContainerTopo #brand a{
+    display: flex;
+    align-items: center;
+
     text-decoration: none;
     text-shadow: #ff3737 0px 0px 10px;
 
@@ -40,6 +52,30 @@
 
 .MainPage #ContainerTopo #brand a b{
     color: white;
+}
+
+.MainPage #ContainerTopo #Topo #UserButton{
+    position: absolute;
+    right: 1em;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    width: 45px;
+    height: 45px;
+}
+
+.MainPage #ContainerTopo #Topo #UserButton .MuiAvatar-root{
+    width: 100%;
+    height: 100%;
+}
+
+.MainPage #ContainerTopo #Topo #UserButton .MuiAvatar-root:hover{
+    transition: .5s all;
+    box-shadow: 0 0 20px rgb(255, 255, 255);
 }
 
 /* ContainerPrincipal */
@@ -93,7 +129,53 @@
 }
 
 /* O intuito é de algum jeito animar isso depois https://app.svgator.com/#/ */
+#ContainerPrincipal .container .card{
+    background: rgba(0, 0, 0, .05);
+    border-color: rgba(0, 0, 0, .1);
+}
+
 #ContainerPrincipal .container .card svg{
     background: url(../assets/TomateTempo-removebg-preview.png) no-repeat center center;
     background-size: contain;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 575.98px) { 
+    .MainPage #ContainerTopo #Topo #UserButton{
+        right: -1.5em;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .MainPage #ContainerTopo #Topo #UserButton{
+        right: 5em;
+    }
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    .MainPage #ContainerTopo #Topo #UserButton{
+        right: 6em;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) and (max-width: 1599.98px) { 
+    .MainPage #ContainerTopo #Topo #UserButton{
+        right: 9em;
+    }
+}
+
+/* Extra large devices (large desktops, 1600px and up)*/
+@media (min-width: 1600px){ 
+    .MainPage #ContainerTopo #Topo #UserButton{
+        right: 15rem;
+    }
 }

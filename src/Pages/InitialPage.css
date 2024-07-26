@@ -156,8 +156,7 @@ body{
 }
 
 .carousel-control-prev, .carousel-control-next{
-    height: 75%;
-
+    height: 20em;
     /* Depois muda no código para quando scrollar para baixo, o carousel control ir junto */
 }
 
@@ -169,12 +168,11 @@ body{
 .carousel-control-prev{
     justify-content: start;
     align-items: center;
-
+    box-sizing: content-box;
 }
 
 .carousel-control-next{
     justify-content: end;
-
 }
 
 .pbottomFrase{
@@ -239,8 +237,8 @@ body{
 #Footer .socialm #SocialMLinks a { 
     display: flex;
     align-items: center;
-    color:  rgb(22, 192, 0);
-    transition: .5s;
+    color:  white;
+    transition: .2s;
 }
 
 #Footer .socialm #SocialMLinks a:hover { 
