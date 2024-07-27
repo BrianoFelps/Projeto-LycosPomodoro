@@ -2,20 +2,19 @@ import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '@fontsource/montserrat'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import LycosLogoWName from './assets/LycosLogoWName.png'
 
-import InitialPage from './Pages/InitialPage';
-import MainPage from './Pages/MainPage'
 
 function App() {
 
   return (
     <>
-      <BrowserRouter>
+      {/* <BrowserRouter>
         <Routes>
-          <Route path='/' element={<InitialPage/>}/>
-          <Route path='/m' element={<MainPage/>}/>
+          <Route></Route>
         </Routes>
-      </BrowserRouter>
+      </BrowserRouter> */}
+      <div> <img src={LycosLogoWName} alt="" width={200}/></div>
       
     </>
   )
