@@ -1,0 +1,30 @@
+#LycosLogoSVG{
+    transition: .5s;
+    border: 1px solid red;
+    cursor: pointer;
+}
+
+#LycosLogoSVG rect#GreekCircle-removebg{
+    transition: all .5s;
+    box-sizing: border-box;
+    transform-origin: 47.1px 50px;
+    animation: Rotation 20s linear infinite;
+}
+
+#LycosLogoSVG:hover rect#GreekCircle-removebg{
+    animation: Rotation 20.5s linear reverse infinite;
+}
+
+#LycosLogoSVG:hover{
+    height: 120px;
+    width: 256px;
+}
+
+@keyframes Rotation{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(980deg);
+    }
+}
