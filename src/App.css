@@ -86,6 +86,10 @@ html, body, #root{
     flex-direction: column-reverse;
 }
 
+#CallToActionBanner .carousel .carousel-inner .display-1{
+    font-size: calc(1rem + 2vw);
+}
+
 .carousel-control-prev,
 .carousel-control-next,
 .carousel-control-prev-icon, 
@@ -148,72 +152,239 @@ html, body, #root{
 
 /* // X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) { 
+    /* HeroBannerContainer */
+    #HeroBannerContainer{
+        padding: 2rem 0;
+    }
     /* CallToAction */
     #CallToActionBanner{
         margin-top: 3rem;
     }
 
-
     #CallToActionBanner .carousel .carousel-inner .display-1{
         font-size: calc(1rem + 3.5vw);
     }
 
+    #CallToActionBanner .carousel .carousel-inner .carousel-caption{
+        padding-bottom: .4rem;
+    }
+
     #CallToActionBanner .carousel .carousel-inner .carousel-caption h3.lead{
-        padding: 0 4rem;
-        font-size: calc(.5rem + 2vw);
+        padding: 0 5rem;
+        font-size: calc(.45rem + 2vw);
+    }
+
+    #CallToActionBanner .carousel .carousel-inner .carousel-caption .ContainerBotoes {
+        margin-top: 1.5rem;
     }
 
     #CallToActionBanner .carousel .carousel-inner .carousel-caption .ContainerBotoes button{
         border-radius: 50px;
-        padding: .5rem 1rem;
-        font-size: calc(.38rem + 2vw);
+        padding: .5rem 1.5rem;
+        font-size: calc(.45rem + 2vw);
     }
     
     #CallToActionBanner .carousel .carousel-inner .carousel-caption .ContainerBotoes .loginbtn{
-        padding: .5rem 1.6rem;
-        margin: 0 .1rem 0 .4rem;
+        padding: .6rem 2.1rem;
+        margin: 0 .65rem 0 .5rem;
     }
 
     /* ContainerTopLogo */
     #ContainerTopoLogo #LycosLogoSVG{
-        width: 13rem;
-        height: 5rem;
+        width: 14rem;
+        height: 5.8rem;
     }
 
     #ContainerTopoLogo #LycosLogoSVG:hover{
-        width: 14rem;
-        height: 5.5rem;
+        width: 15.5rem;
+        height: 7rem;
     }
 }
 
 /* // Small devices (landscape phones, less than 768px) */
-@media (max-width: 767.98px) { 
+@media (min-width:575.99px) and (max-width: 767.98px) { 
+    /* HeroBannerContainer */
+    #HeroBannerContainer{
+        padding: 2rem 0;
+    }
+
+    /* CallToAction */
+    #CallToActionBanner{
+        margin-top: 3rem;
+    }
+
+    #CallToActionBanner .carousel .carousel-inner .display-1{
+        font-size: calc(1.6rem + 2.5vw);
+    }
+
+    #CallToActionBanner .carousel .carousel-inner .carousel-caption h3.lead{
+        padding: 0 5rem;
+        font-size: calc(.3rem + 1.8vw);
+    }
+
+    #CallToActionBanner .carousel .carousel-inner .carousel-caption .ContainerBotoes button{
+        border-radius: 50px;
+        padding: .6rem 1.6rem;
+        font-size: calc(.35rem + 1.7vw);
+    }
     
+    #CallToActionBanner .carousel .carousel-inner .carousel-caption .ContainerBotoes .loginbtn{
+        padding: .5rem 2.6rem;
+        margin: 0 .5rem 0 .5rem;
+    }
+
+    /* ContainerTopLogo */
+    #ContainerTopoLogo #LycosLogoSVG{
+        width: 14rem;
+        height: 6rem;
+    }
+
+    #ContainerTopoLogo #LycosLogoSVG:hover{
+        width: 16rem;
+        height: 6.5rem;
+    }
 }
 
 /* // Medium devices (tablets, less than 992px) */
-@media (max-width: 991.98px) { 
-    
+@media (min-width:767.99px) and (max-width: 991.98px) { 
+   /* HeroBannerContainer */
+    #HeroBannerContainer{
+        padding: 2.4rem 0;
+    }
+
+    /* CallToAction */
+    #CallToActionBanner{
+        margin-top: 3rem;
+    }
+
+    #CallToActionBanner .carousel .carousel-inner .display-1{
+        font-size: calc(1.6rem + 1.9vw);
+    }
+
+    #CallToActionBanner .carousel .carousel-inner .carousel-caption h3.lead{
+        padding: 0 5rem;
+        font-size: calc(.3rem + 1.3vw);
+    }
+
+    #CallToActionBanner .carousel .carousel-inner .carousel-caption .ContainerBotoes button{
+        border-radius: 50px;
+        padding: .6rem 1.6rem;
+        font-size: calc(.35rem + 1vw);
+    }
+
+    #CallToActionBanner .carousel .carousel-inner .carousel-caption .ContainerBotoes .loginbtn{
+        padding: .5rem 2.2rem;
+        margin: 0 .6rem 0 .5rem;
+    }
+
+    /* ContainerTopLogo */
+    #ContainerTopoLogo #LycosLogoSVG{
+        width: 15rem;
+        height: 6.5rem;
+    }
+
+    #ContainerTopoLogo #LycosLogoSVG:hover{
+        width: 17rem;
+        height: 7rem;
+    }
 }
 
 /* // Large devices (desktops, less than 1200px) */
-@media (max-width: 1199.98px) { 
-    
+@media (min-width: 991.99px) and (max-width: 1199.98px) { 
+    /* HeroBannerContainer */
+    #HeroBannerContainer{
+        padding: 2rem 0;
+    }
+
+    /* CallToAction */
+    #CallToActionBanner{
+        margin-top: 3rem;
+    }
+
+    #CallToActionBanner .carousel .carousel-inner .display-1{
+        font-size: calc(1.6rem + 1.5vw);
+    }
+
+    #CallToActionBanner .carousel .carousel-inner .carousel-caption h3.lead{
+        padding: 0 5rem;
+        font-size: calc(.3rem + 1vw);
+    }
+
+    #CallToActionBanner .carousel .carousel-inner .carousel-caption .ContainerBotoes button{
+        border-radius: 50px;
+        padding: .6rem 1.6rem;
+        font-size: calc(.35rem + 1vw);
+    }
+
+    #CallToActionBanner .carousel .carousel-inner .carousel-caption .ContainerBotoes .loginbtn{
+        padding: .5rem 2.2rem;
+        margin: 0 .6rem 0 .5rem;
+    }
+
+    /* ContainerTopLogo */
+    #ContainerTopoLogo #LycosLogoSVG{
+        width: 15rem;
+        height: 6.5rem;
+    }
+
+    #ContainerTopoLogo #LycosLogoSVG:hover{
+        width: 17rem;
+        height: 7rem;
+    }
 }
 
 /* // X-Large devices (large desktops, less than 1400px) */
-@media (max-width: 1399.98px) { 
-    
+@media (min-width: 1199.99px) and (max-width: 1399.98px) { 
+     /* HeroBannerContainer */
+     #HeroBannerContainer{
+        padding: 2rem 0;
+    }
+
+    /* CallToAction */
+    #CallToActionBanner{
+        margin-top: 3rem;
+    }
+
+    #CallToActionBanner .carousel .carousel-inner .display-1{
+        font-size: calc(1.6rem + 1vw);
+    }
+
+    #CallToActionBanner .carousel .carousel-inner .carousel-caption h3.lead{
+        padding: 0 5rem;
+        font-size: calc(.3rem + 1vw);
+    }
+
+    #CallToActionBanner .carousel .carousel-inner .carousel-caption .ContainerBotoes button{
+        border-radius: 50px;
+        padding: .6rem 1.6rem;
+        font-size: calc(.35rem + 1vw);
+    }
+
+    #CallToActionBanner .carousel .carousel-inner .carousel-caption .ContainerBotoes .loginbtn{
+        padding: .5rem 2.2rem;
+        margin: 0 .8rem 0 .5rem;
+    }
+
+    /* ContainerTopLogo */
+    #ContainerTopoLogo #LycosLogoSVG{
+        width: 15rem;
+        height: 6.5rem;
+    }
+
+    #ContainerTopoLogo #LycosLogoSVG:hover{
+        width: 17rem;
+        height: 7rem;
+    }
+}
+
+@media (min-width: 1599.99px) and (max-width: 2379.98px) {
+    #CallToActionBanner .carousel .carousel-inner .carousel-caption .ContainerBotoes{
+        padding: 0 37vw;
+    }
 }
 
 @media (min-width: 2500px){
     #ContainerBg{
         background-position: center center !important;
-    }
-}
-
-@media(max-height: 550px){
-    #HeroBannerContainer{
-        padding: 0;
     }
 }

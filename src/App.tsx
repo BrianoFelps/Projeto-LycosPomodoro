@@ -22,7 +22,7 @@ function App() {
         </div>
         <div id='CallToActionBanner'>
           <Carousel>
-            <Carousel.Item interval={50000000}>
+            <Carousel.Item interval={9000}>
               <div className="d-flex justify-content-center align-items-center text-center">
                   <h1 className='display-1 fw-bolder'>Atualize seu potencial!</h1>
               </div>
@@ -34,7 +34,7 @@ function App() {
                 </div>
               </Carousel.Caption>
             </Carousel.Item>
-            <Carousel.Item interval={50000000}>
+            <Carousel.Item interval={6000}>
               <div className="d-flex justify-content-center align-items-center text-center">
                   <h1 className='display-1  fw-bolder'>Atualize seu potencial!</h1>
               </div>
