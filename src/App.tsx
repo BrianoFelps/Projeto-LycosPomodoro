@@ -36,19 +36,18 @@ function App() {
             </Carousel.Item>
             <Carousel.Item interval={6000}>
               <div className="d-flex justify-content-center align-items-center text-center">
-                  <h1 className='display-1  fw-bolder'>Atualize seu potencial!</h1>
+                  <h1 className='display-1  fw-bolder'>Não subestime o valor de seu tempo</h1>
               </div>
               <Carousel.Caption>
-                <h3 className='lead'>bottom text</h3>
-                <div className='ContainerBotoes'>
-                  <button className='btn btn-outline-light'>a</button>
-                  <button className='btn btn-success loginbtn'>b</button>
-                </div>
+                <h3 className='lead'>
+                  10 minutos puro foco diariamente é melhor que várias horas em inconstância! No final do ano seriam acumulados 3650 minutos no seu repertório de conhecimento. Vai perder as sessões de foco?
+                </h3>
               </Carousel.Caption>
             </Carousel.Item>
           </Carousel>
         </div>
       </div>
+      <div>fajdslkfjalsdkjflkasdjflkasdjlkfasdjlkfasdlkjfhasldjkfhklajd</div>
     </>
   )
 }
