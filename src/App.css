@@ -1,0 +1,219 @@
+html, body, #root{
+    width: 100%;
+    height: 100%;
+    margin: 0; /* Certifique-se de remover margens padrão */
+    overflow: hidden; /* Evita barras de rolagem */
+    position: relative;
+    color: white;
+}
+
+/* Background's */
+
+#ContainerBg{
+    position: fixed;
+    background: url(./assets/RafaelFilosofos.jpg);
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+#ContainerBg2{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0);
+    opacity: .75;
+    z-index: -1;
+}
+
+/* HeroBanner */
+
+#HeroBannerContainer{
+    height: 100%;
+    width: 100%;
+    padding: 3rem 0;
+
+    display: flex;
+    flex-direction: column;
+}
+
+/* ContainerTopo */
+
+#ContainerTopoLogo{
+    display: flex;
+    justify-content: center;
+
+    position: absolute;
+    z-index: 1;
+
+    width: 100%;
+}
+
+#ContainerTopoLogo #LycosLogoSVG{
+    width: 23rem;
+    height: 8rem;
+}
+
+#ContainerTopoLogo #LycosLogoSVG:hover{
+    width: 23rem;
+    height: 9rem;
+    padding-right: .8rem;
+}
+
+/* ContainerCTA */
+
+#CallToActionBanner{
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 0 3rem;
+}
+
+#CallToActionBanner .carousel.slide{
+    height: 80%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+}
+
+.carousel-control-prev,
+.carousel-control-next,
+.carousel-control-prev-icon, 
+.carousel-control-next-icon {
+  display: none !important;
+}
+
+#CallToActionBanner .carousel .carousel-indicators button{
+    width: 5rem;
+    flex: none;
+}
+
+#CallToActionBanner .carousel .carousel-indicators{
+    position: relative;
+    bottom: -1rem;
+}
+
+#CallToActionBanner .carousel .carousel-inner{
+    height: auto;
+}
+
+#CallToActionBanner .carousel .carousel-inner .carousel-caption{
+    position: static;
+}
+
+#CallToActionBanner .carousel .carousel-inner .carousel-caption h3.lead{
+    padding: 0 20rem;
+    transition: .3s;
+}
+
+#CallToActionBanner .carousel .carousel-inner .carousel-caption .ContainerBotoes{
+    margin-top: 2rem;
+
+    display: flex;
+    justify-content: space-between;
+
+    padding: 0 35vw;
+
+    transition: .3s;
+}
+
+#CallToActionBanner .carousel .carousel-inner .carousel-caption .ContainerBotoes button{
+    border-radius: 50px;
+    padding: .8rem 3rem;
+    box-sizing: content-box;
+
+    font-weight: bolder;
+}
+
+#CallToActionBanner .carousel .carousel-inner .carousel-caption .ContainerBotoes .loginbtn{
+    padding: .8rem 3.8rem;
+}
+
+
+/* #CallToActionBanner .carousel-indicators {
+  bottom: 0; /* Ajuste conforme necessário
+} */
+
+/* Media queries */
+
+/* // X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+    /* CallToAction */
+    #CallToActionBanner{
+        margin-top: 3rem;
+    }
+
+
+    #CallToActionBanner .carousel .carousel-inner .display-1{
+        font-size: calc(1rem + 3.5vw);
+    }
+
+    #CallToActionBanner .carousel .carousel-inner .carousel-caption h3.lead{
+        padding: 0 4rem;
+        font-size: calc(.5rem + 2vw);
+    }
+
+    #CallToActionBanner .carousel .carousel-inner .carousel-caption .ContainerBotoes button{
+        border-radius: 50px;
+        padding: .5rem 1rem;
+        font-size: calc(.38rem + 2vw);
+    }
+    
+    #CallToActionBanner .carousel .carousel-inner .carousel-caption .ContainerBotoes .loginbtn{
+        padding: .5rem 1.6rem;
+        margin: 0 .1rem 0 .4rem;
+    }
+
+    /* ContainerTopLogo */
+    #ContainerTopoLogo #LycosLogoSVG{
+        width: 13rem;
+        height: 5rem;
+    }
+
+    #ContainerTopoLogo #LycosLogoSVG:hover{
+        width: 14rem;
+        height: 5.5rem;
+    }
+}
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) { 
+    
+}
+
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) { 
+    
+}
+
+/* // Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) { 
+    
+}
+
+/* // X-Large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) { 
+    
+}
+
+@media (min-width: 2500px){
+    #ContainerBg{
+        background-position: center center !important;
+    }
+}
+
+@media(max-height: 550px){
+    #HeroBannerContainer{
+        padding: 0;
+    }
+}
