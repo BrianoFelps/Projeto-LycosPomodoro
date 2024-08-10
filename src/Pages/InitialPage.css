@@ -1,0 +1,200 @@
+html, body, #root{
+    width: 100%;
+    height: 100%;
+    margin: 0; /* Certifique-se de remover margens padrão */
+    overflow: hidden; /* Evita barras de rolagem */
+    position: relative;
+    color: white;
+}
+
+/* Background's */
+
+#ContainerBg{
+    position: fixed;
+    background: url(../assets/RafaelFilosofos.jpg);
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+#ContainerBg2{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0);
+    opacity: .78;
+    z-index: -1;
+}
+
+/* ContainerTopoLogo */
+
+#ContainerTopoLogo{
+    display: flex;
+    justify-content: center;
+
+    position: absolute;
+    z-index: 1;
+
+    width: 100%;
+}
+
+#ContainerTopoLogo #LycosLogoSVG{
+    width: 23rem;
+    height: 8rem;
+}
+
+#ContainerTopoLogo #LycosLogoSVG:hover{
+    width: 23rem;
+    height: 9rem;
+    padding-right: .8rem;
+}
+
+
+/* HeroBanner */
+
+#HeroBannerContainer{
+    height: 100%;
+    width: 100%;
+    padding: 3rem 0;
+
+    display: flex;
+    flex-direction: column;
+}
+
+/* ContainerCTA */
+
+#CallToActionBanner{
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 0 3rem;
+}
+
+/* Media queries */
+
+/* // X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+    /* HeroBannerContainer */
+    #HeroBannerContainer{
+        padding: 2rem 0;
+    }
+}
+
+/* // X-Small devices (portrait phones, less than 576px and max-height: 600px) */
+@media (max-width:575.98px) and (max-height: 883px) { 
+    /* HeroBannerContainer */
+    #HeroBannerContainer{
+        padding: 2rem 0;
+    }
+    /* CallToAction */
+    #CallToActionBanner{
+        margin-top: 3rem;
+        padding: 0 .5rem;
+    }
+}
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (min-width:575.99px) and (max-width: 767.98px) { 
+    /* HeroBannerContainer */
+    #HeroBannerContainer{
+        padding: 2rem 0;
+    }
+
+    /* CallToAction */
+    #CallToActionBanner{
+        margin-top: 3rem;
+    }
+}
+
+
+/* // Medium devices (tablets, less than 992px) */
+@media (min-width:767.99px) and (max-width: 991.98px) { 
+   /* HeroBannerContainer */
+    #HeroBannerContainer{
+        padding: 2.4rem 0;
+    }
+
+    /* CallToAction */
+    #CallToActionBanner{
+        margin-top: 3rem;
+    }
+}
+
+@media (min-width:767.99px) and (max-width: 991.98px) and (max-height: 650px) { 
+    /* HeroBannerContainer */
+    #HeroBannerContainer{
+        padding: 0;
+    }
+}
+
+@media (min-width: 991.99px) and (max-width: 1199.98px) { 
+    /* HeroBannerContainer */
+    #HeroBannerContainer{
+        padding: 3rem 0;
+    }
+
+    /* CallToAction */
+    #CallToActionBanner{
+        margin-top: 3rem;
+    }
+}
+
+/* // Large devices (desktops, less than 1200px) */
+@media (min-width: 991.99px) and (max-width: 1199.98px) and (max-height: 650px) { 
+    /* HeroBannerContainer */
+    #HeroBannerContainer{
+        padding: 1rem 0;
+    }
+}
+
+/* // X-Large devices (large desktops, less than 1400px) */
+@media (min-width: 1199.99px) and (max-width: 1399.98px) { 
+     /* HeroBannerContainer */
+     #HeroBannerContainer{
+        padding: 4rem 0;
+    }
+
+    /* CallToAction */
+    #CallToActionBanner{
+        margin-top: 3rem;
+    }
+}
+
+@media (min-width: 1199.99px) and (max-width: 1399.98px) and (max-height: 700px){ 
+    /* HeroBannerContainer */
+    #HeroBannerContainer{
+        padding: 0rem 0;
+    }
+}
+
+@media (min-width: 1399.99px) and (max-width: 2379.98px) {
+     /* HeroBannerContainer */
+     #HeroBannerContainer{
+        padding: 3rem 0;
+    }
+
+    /* CallToAction */
+    #CallToActionBanner{
+        margin-top: 3rem;
+    }
+}
+
+@media (min-width: 2500px){
+    #ContainerBg{
+        background-position: center center !important;
+    }
+}
+
+@media (max-height: 500px) {
+    #HeroBannerContainer{
+        padding: 0rem 0;
+    }
+}

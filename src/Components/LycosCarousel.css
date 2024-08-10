@@ -1,0 +1,245 @@
+.carousel.slide{
+    height: 80%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+}
+
+.carousel .carousel-inner .display-1{
+    font-size: calc(1rem + 2vw);
+}
+
+.carousel-control-prev,
+.carousel-control-next,
+.carousel-control-prev-icon, 
+.carousel-control-next-icon {
+  display: none !important;
+}
+
+.carousel .carousel-indicators button{
+    width: 5rem;
+    flex: none;
+}
+
+.carousel .carousel-indicators{
+    position: relative;
+    bottom: -1rem;
+}
+
+.carousel .carousel-inner{
+    height: auto;
+}
+
+.carousel .carousel-inner .carousel-caption{
+    position: static;
+}
+
+.carousel .carousel-inner .carousel-caption h3.lead{
+    padding: 0 20rem;
+    transition: .3s;
+}
+
+.carousel .carousel-inner .carousel-caption .ContainerBotoes{
+    margin-top: 2rem;
+
+    display: flex;
+    justify-content: space-between;
+
+    padding: 0 35vw;
+
+    transition: .3s;
+}
+
+.carousel .carousel-inner .carousel-caption .ContainerBotoes button{
+    border-radius: 50px;
+    padding: .8rem 3rem;
+    box-sizing: content-box;
+
+    font-weight: bolder;
+}
+
+.carousel .carousel-inner .carousel-caption .ContainerBotoes .loginbtn{
+    padding: .8rem 3.8rem;
+}
+
+/* Media queries */
+
+/* // X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+    .carousel .carousel-inner .display-1{
+        font-size: calc(1rem + 3.5vw);
+    }
+
+    .carousel .carousel-inner .carousel-caption{
+        padding-bottom: .4rem;
+    }
+
+    .carousel .carousel-inner .carousel-caption h3.lead{
+        padding: 0 5rem;
+        font-size: calc(.45rem + 2vw);
+    }
+
+    .carousel .carousel-inner .carousel-caption .ContainerBotoes {
+        margin-top: 1.5rem;
+    }
+
+    .carousel .carousel-inner .carousel-caption .ContainerBotoes button{
+        border-radius: 50px;
+        padding: .5rem 1.5rem;
+        font-size: calc(.45rem + 2vw);
+    }
+    
+    .carousel .carousel-inner .carousel-caption .ContainerBotoes .loginbtn{
+        padding: .6rem 2.1rem;
+        margin: 0 .4rem 0 .5rem;
+    }
+}
+
+/* // X-Small devices (portrait phones, less than 576px and max-height: 600px) */
+@media (max-width:575.98px) and (max-height: 883px) { 
+    .carousel .carousel-inner .display-1{
+        font-size: calc(1rem + 3.5vw);
+    }
+
+    .carousel .carousel-inner .carousel-caption{
+        padding-bottom: .4rem;
+    }
+
+    .carousel .carousel-inner .carousel-caption h3.lead{
+        padding: 0 5rem;
+        font-size: calc(.45rem + 2vw);
+    }
+    .carousel .carousel-inner .carousel-caption h3.lead2{
+        padding: 0 1rem;
+    }
+}
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (min-width:575.99px) and (max-width: 767.98px) { 
+    .carousel .carousel-inner .display-1{
+        font-size: calc(1.6rem + 2.5vw);
+    }
+
+    .carousel .carousel-inner .carousel-caption h3.lead{
+        padding: 0 5rem;
+        font-size: calc(.3rem + 1.8vw);
+    }
+
+    .carousel .carousel-inner .carousel-caption .ContainerBotoes button{
+        border-radius: 50px;
+        padding: .6rem 1.6rem;
+        font-size: calc(.35rem + 1.7vw);
+    }
+    
+    .carousel .carousel-inner .carousel-caption .ContainerBotoes .loginbtn{
+        padding: .5rem 2.6rem;
+        margin: 0 .5rem 0 .5rem;
+    }
+}
+
+
+/* // Medium devices (tablets, less than 992px) */
+@media (min-width:767.99px) and (max-width: 991.98px) {
+    .carousel .carousel-inner .display-1{
+        font-size: calc(1.6rem + 3vw);
+    }
+
+    .carousel .carousel-inner .carousel-caption h3.lead{
+        padding: 0 5rem;
+        font-size: calc(.3rem + 1.8vw);
+    }
+
+    .carousel .carousel-inner .carousel-caption .ContainerBotoes button{
+        border-radius: 50px;
+        padding: .6rem 1.6rem;
+        font-size: calc(.35rem + 1.5vw);
+    }
+
+    .carousel .carousel-inner .carousel-caption .ContainerBotoes .loginbtn{
+        padding: .5rem 2.2rem;
+        margin: 0 .6rem 0 .5rem;
+    }
+}
+
+@media (min-width: 991.99px) and (max-width: 1199.98px) {  
+    .carousel .carousel-inner .display-1{
+        font-size: calc(1.6rem + 3vw);
+    }
+    
+    .carousel .carousel-inner .carousel-caption h3.lead{
+        padding: 0 5rem;
+        font-size: calc(.3rem + 2vw);
+    }
+    
+    .carousel .carousel-inner .carousel-caption .ContainerBotoes button{
+        border-radius: 50px;
+        padding: .7rem 2rem;
+        font-size: calc(.35rem + 1.6vw);
+    }
+    
+    .carousel .carousel-inner .carousel-caption .ContainerBotoes .loginbtn{
+        padding: .7rem 2.8rem;
+        margin: 0 .6rem 0 .5rem;
+    }
+}
+
+/* // X-Large devices (large desktops, less than 1400px) */
+@media (min-width: 1199.99px) and (max-width: 1399.98px) { 
+    .carousel .carousel-inner .display-1{
+        font-size: calc(1.6rem + 3vw);
+    }
+
+    .carousel .carousel-inner .carousel-caption h3.lead{
+        padding: 0 5rem;
+        font-size: calc(.3rem + 2vw);
+    }
+
+    .carousel .carousel-inner .carousel-caption .ContainerBotoes button{
+        border-radius: 50px;
+        padding: .6rem 1.6rem;
+        font-size: calc(.35rem + 1.8vw);
+    }
+
+    .carousel .carousel-inner .carousel-caption .ContainerBotoes .loginbtn{
+        padding: .7rem 2.8rem;
+        margin: 0 .8rem 0 .5rem;
+    }
+}
+
+@media (min-width: 1399.99px) and (max-width: 2379.98px) {
+    .carousel .carousel-inner .display-1{
+        font-size: calc(2rem + 2vw);
+    }
+
+    .carousel .carousel-inner .carousel-caption h3.lead{
+        padding: 0 20rem;
+        font-size: calc(.2rem + 1vw);
+    }
+
+    .carousel .carousel-inner .carousel-caption .ContainerBotoes{
+        padding: 0 39vw;
+    }
+
+    .carousel .carousel-inner .carousel-caption .ContainerBotoes button{
+        border-radius: 50px;
+        padding: .7rem 2rem;
+        font-size: calc(.25rem + 1vw);
+    }
+
+    .carousel .carousel-inner .carousel-caption .ContainerBotoes .loginbtn{
+        padding: 0rem 2.5rem;
+        margin: 0 .6rem 0 .5rem;
+    }
+
+    .carousel .carousel-indicators{
+        width: 15vw;
+        justify-content: space-between;
+    }
+
+    .carousel .carousel-indicators button{
+        width: 6rem;
+        height: .25rem;
+    }
+}

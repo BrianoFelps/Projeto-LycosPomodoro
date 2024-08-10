@@ -32,3 +32,110 @@
         transform: rotate(980deg);
     }
 }
+
+/* Media queries */
+
+/* // X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+    /* ContainerTopLogo */
+    #ContainerTopoLogo #LycosLogoSVG{
+        width: 14rem;
+        height: 5.8rem;
+    }
+    
+    #ContainerTopoLogo #LycosLogoSVG:hover{
+        width: 15rem;
+        height: 6.2rem;
+    }
+}
+
+/* // X-Small devices (portrait phones, less than 576px and max-height: 600px) */
+@media (max-width:575.98px) and (max-height: 883px) { 
+    /* HeroBannerContainer */
+    #ContainerTopoLogo #HeroBannerContainer{
+        padding: 2rem 0;
+    }
+    /* CallToAction */
+    #ContainerTopoLogo #CallToActionBanner{
+        margin-top: 3rem;
+        padding: 0 .5rem;
+    }
+}
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (min-width:575.99px) and (max-width: 767.98px) { 
+    #ContainerTopoLogo #LycosLogoSVG{
+        width: 14rem;
+        height: 6rem;
+    }
+
+    #ContainerTopoLogo #LycosLogoSVG:hover{
+        width: 16rem;
+        height: 6.5rem;
+    }
+}
+
+
+/* // Medium devices (tablets, less than 992px) */
+@media (min-width:767.99px) and (max-width: 991.98px) { 
+    #ContainerTopoLogo #LycosLogoSVG{
+        width: 19rem;
+        height: 8rem;
+    }
+
+    #ContainerTopoLogo #LycosLogoSVG:hover{
+        width: 21rem;
+        height: 9rem;
+    }
+}
+
+@media (min-width:767.99px) and (max-width: 991.98px) and (max-height: 650px) { 
+    #ContainerTopoLogo #LycosLogoSVG{
+        width: 12rem;
+        height: 6.5rem;
+    }
+
+    #ContainerTopoLogo #LycosLogoSVG:hover{
+        width: 14rem;
+        height: 6.5rem;
+    }
+}
+
+@media (min-width: 991.99px) and (max-width: 1199.98px) { 
+    /* ContainerTopLogo */
+    #ContainerTopoLogo #LycosLogoSVG{
+        width: 23rem;
+        height: 10rem;
+    }
+    
+    #ContainerTopoLogo #LycosLogoSVG:hover{
+        width: 25rem;
+        height: 11rem;
+    }
+}
+
+/* // Large devices (desktops, less than 1200px) */
+@media (min-width: 991.99px) and (max-width: 1199.98px) and (max-height: 650px) { 
+    #ContainerTopoLogo #LycosLogoSVG{
+        width: 17rem;
+        height: 9rem;
+    }
+
+    #ContainerTopoLogo #LycosLogoSVG:hover{
+        width: 21rem;
+        height: 10rem;
+    }
+}
+
+/* // X-Large devices (large desktops, less than 1400px) */
+@media (min-width: 1199.99px) and (max-width: 1399.98px) { 
+    #ContainerTopoLogo #LycosLogoSVG{
+        width: 25rem;
+        height: 11rem;
+    }
+
+    #ContainerTopoLogo #LycosLogoSVG:hover{
+        width: 29rem;
+        height: 13rem;
+    }
+}
