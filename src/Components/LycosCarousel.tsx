@@ -10,21 +10,21 @@ interface props{
 export default function LycosCarousel(props: props){
     return(
         <Carousel>
-            <Carousel.Item interval={9000}>
+            <Carousel.Item interval={900000}>
               <div className="d-flex justify-content-center align-items-center text-center">
                   <h1 className='display-1 fw-bolder'>Atualize seu potencial!</h1>
               </div>
               <Carousel.Caption>
                 <h3 className='lead'>Lycos pomotimer é um site que fomentará seu foco com o método pomodoro! Realize seus objetivos em potencial, e alcance a forma mais sublime de si. Bons estudos!</h3>
                 <div className='ContainerBotoes'>
-                  <button className='btn btn-outline-light' onClick={props.onRegisterClick}>Cadastrar</button>
-                  <button className='btn btn-success loginbtn' onClick={props.onLoginClick}>Entrar</button>
+                  <button className='btn btn-outline-light' onClick={props.onRegisterClick}>Cadastre-se</button>
+                  <button className='btn btn-success loginbtn' onClick={props.onLoginClick}>Fazer login</button>
                 </div>
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item interval={6000}>
               <div className="d-flex justify-content-center align-items-center text-center">
-                  <h1 className='display-1  fw-bolder'>Não subestime o valor de seu tempo</h1>
+                  <h1 className='display-1 fw-bolder'>Não subestime o valor de seu tempo</h1>
               </div>
               <Carousel.Caption>
                 <h3 className='lead lead2'>

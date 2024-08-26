@@ -1,6 +1,6 @@
 import './InitialPage.css';
 import LycosCarousel from '../Components/LycosCarousel';
-import LycosCompleteLogo from '../assets/Svg/LycosCompleteLogo';
+import LycosCompleteLogo from '../Components/LycosCompleteLogo';
 import { useNavigate } from 'react-router-dom';
 
 function FeedPage() {
@@ -21,14 +21,14 @@ function FeedPage() {
     <>
       <div id='ContainerBg'></div>
       <div id='ContainerBg2'></div>
-      <div id='HeroBannerContainer'>
+      <header id='HeroBannerContainer'>
         <nav id='ContainerTopoLogo'>
           <LycosCompleteLogo></LycosCompleteLogo>
         </nav>
         <main id='CallToActionBanner'>
           <LycosCarousel onLoginClick={LoginNavigate} onRegisterClick={RegisterNavigate}/>
         </main>
-      </div>
+      </header>
     </>
   )
 }
