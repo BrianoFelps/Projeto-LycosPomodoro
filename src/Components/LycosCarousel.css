@@ -201,10 +201,6 @@
         font-size: calc(.2rem + 1vw);
     }
 
-    .carousel .carousel-inner .carousel-caption .ContainerBotoes{
-        padding: 0 39vw;
-    }
-
     .carousel .carousel-inner .carousel-caption .ContainerBotoes button{
         border-radius: 50px;
         padding: .7rem 2rem;

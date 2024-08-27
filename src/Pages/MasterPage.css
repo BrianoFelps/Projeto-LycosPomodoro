@@ -1,0 +1,24 @@
+#ContainerBgMasterPage{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .9);
+    position: absolute;
+    z-index: -1;
+}
+
+header#TopoMasterPage {
+    width: 100%;
+
+    display: flex;
+    justify-content: end;
+}
+
+header#TopoMasterPage .AlinhamentoBetween {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 0 auto;
+}
