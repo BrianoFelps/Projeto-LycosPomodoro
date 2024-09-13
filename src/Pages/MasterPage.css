@@ -1,24 +1,32 @@
-#ContainerBgMasterPage{
+html.MasterPage, body, #root, #MajorContainerMP{
     width: 100%;
+    height: 100%;
+    color: white;
+}
+
+.MasterPage{
+    --main-width: 100%;
+    --sidebar-width: 0;
+}
+
+.OpenedSideBar{
+    --main-width: 70vw;
+    --sidebar-width: 30vw;
+}
+
+#MajorContainerMP #MediumContainerMP #BgContainerMasterPage{
+    width: var(--main-width);
     height: 100%;
     background: rgba(0, 0, 0, .9);
     position: absolute;
     z-index: -1;
 }
 
-header#TopoMasterPage {
-    width: 100%;
-
-    display: flex;
-    justify-content: end;
+#SideBar{
+    width: var(--sidebar-width);
+    display: none;
 }
 
-header#TopoMasterPage .AlinhamentoBetween {
-    width: 100%;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    margin: 0 auto;
+#MediumContainerMP{
+    width: var(--main-width);
 }

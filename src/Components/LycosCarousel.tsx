@@ -12,7 +12,7 @@ export default function LycosCarousel(props: props){
         <Carousel>
             <Carousel.Item interval={900000}>
               <div className="d-flex justify-content-center align-items-center text-center">
-                  <h1 className='display-1 fw-bolder'>Atualize seu potencial!</h1>
+                  <h1 className='display-1 fw-bolder'>Atualize seu potencial! Quero fazer em ingles depois se der</h1>
               </div>
               <Carousel.Caption>
                 <h3 className='lead'>Lycos pomotimer é um site que fomentará seu foco com o método pomodoro! Realize seus objetivos em potencial, e alcance a forma mais sublime de si. Bons estudos!</h3>
