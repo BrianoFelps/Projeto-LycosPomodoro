@@ -1,10 +1,12 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import './MasterPage.css';
 import LycosCompleteLogo from '../Components/LycosCompleteLogo';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faPen } from '@fortawesome/free-solid-svg-icons';
+import LycosTimer from '../Components/LycosTimer';
 
 export default function MasterPage (){
+    
     useEffect(() =>{
          // Adiciona a classe ao elemento <html> quando o componente é montado
         document.documentElement.classList.add('MasterPage');
@@ -16,16 +18,19 @@ export default function MasterPage (){
         // document.documentElement.classList.remove('OpenedSideBar');
         };
     }, [])
+
     return(
-        <div id='MajorContainerMP' className='d-flex'>        
+        <div id='MajorContainerMP' className='d-flex'>    
+
             <div id='SideBar'>
                 barra lateral aberta <br />
             </div>
+
             <div id='MediumContainerMP'>
                 <div id='BgContainerMasterPage'></div>
-                <header id='MasterPageHeader' className='mt-2'>
+                <header id='MasterPageHeader' className='mt-3 w-100'>
                     <div className='d-flex w-100 align-items-center justify-content-between'>
-                        <div id='HamburgerButton' className='ms-4'>
+                        <div id='HamburgerButton' className='ms-5'>
                             <button className='btn btn-outline-light px-3'>
                                 <FontAwesomeIcon icon={faBars} />
                             </button>
@@ -33,20 +38,28 @@ export default function MasterPage (){
                         <div id='Logo'>
                             <LycosCompleteLogo></LycosCompleteLogo>
                         </div>
-                        <div id='Switch' className='me-4'>
+                        <div id='FocusSwitch' className='me-5'>
                             <button onClick={() => {alert("aaaa")}}>
-                                aasddsad
+                                Switch
                             </button>
                         </div>
                     </div>
                 </header>
-                <main>
-                    <div id='task'></div>
-                    <input type='text' id='Countdown' value={'00:00'}></input>
-                    <button id='StartStopButton' className='btn btn-outline-light'>
-                        aaaa
-                    </button>
-                </main>
+                <div className='container d-flex flex-column h-100'>
+                    <main className='w-100 h-100 d-flex flex-column align-items-center justify-content-center'>
+                        <div id='TaskContainer'>
+                            <input type="text" id='Task' placeholder='Task name' />
+                            <FontAwesomeIcon id='PencilIcon' icon={faPen} />
+                        </div>
+
+                        <LycosTimer/>
+
+                        <button id='StartStopButton' className='btn btn-outline-light'>
+                            aaaa
+                        </button>
+                    </main>
+                </div>
+
                 <aside>
                     spotify
                 </aside>
@@ -54,9 +67,11 @@ export default function MasterPage (){
                     ...
                 </article>
                 <footer>
-                    Pomofocus todos os direitos reservados
+                    c Pomofocus all rights reserved.
                 </footer>
+                
             </div>
+            
         </div>
     )
 }

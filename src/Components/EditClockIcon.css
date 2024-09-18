@@ -1,0 +1,9 @@
+.editClockIcon{
+    fill: var(--text-color);
+    transition: .1s;
+}
+
+.editClockIcon:hover {
+    fill: var(--hover-text-color); /* Cor ao passar o mouse */
+}
+  
