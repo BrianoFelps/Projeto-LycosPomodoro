@@ -2,11 +2,8 @@ import "./LycosTimer.css"
 // import EditClockIcon from "./EditClockIcon"
 import { useEffect, useState } from "react";
 
-interface CountdownTimerProps {
-    duration: number; // Duração em segundos
-}
-
-export default function LycosTimer ({duration = 1500}: CountdownTimerProps) {
+export default function LycosTimer () {
+    let duration = 1500;
     const [timeRemaining, setTimeRemaining] = useState<number>(duration);
     const [isActive, setIsActive] = useState<boolean>(false); // Estado para controlar a contagem
     

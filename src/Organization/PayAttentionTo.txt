@@ -1,3 +1,7 @@
 Responsivity's not working well below 435px
 Logos size is weird
-Gotta do media-queries on MasterPage.tsx
+Do media-queries on MasterPage.tsx
+
+Add functions to sideBar button, switch button, editClock icon, and editTask icon
+
+Do the rest of the site down below
