@@ -37,3 +37,7 @@
 
     transition: .5s;
 }
+
+#PhaseMenu input{
+    width: 100px;
+}

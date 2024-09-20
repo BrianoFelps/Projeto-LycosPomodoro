@@ -29,8 +29,8 @@ export default function MasterPage (){
             <div id='MediumContainerMP'>
                 <div id='BgContainerMasterPage'></div>
                 <header id='MasterPageHeader' className='mt-3 w-100'>
-                    <div className='d-flex w-100 align-items-center justify-content-between'>
-                        <div id='HamburgerButton' className='ms-5'>
+                    <div className='d-flex w-100 align-items-center justify-content-between container mx-auto px-3 p-sm-0'>
+                        <div id='HamburgerButton'>
                             <button className='btn btn-outline-light px-3'>
                                 <FontAwesomeIcon icon={faBars} />
                             </button>
@@ -38,7 +38,7 @@ export default function MasterPage (){
                         <div id='Logo'>
                             <LycosCompleteLogo></LycosCompleteLogo>
                         </div>
-                        <div id='FocusSwitch' className='me-5'>
+                        <div id='FocusSwitch'>
                             <button onClick={() => {alert("aaaa")}}>
                                 Switch
                             </button>
@@ -49,14 +49,11 @@ export default function MasterPage (){
                     <main className='w-100 h-100 d-flex flex-column align-items-center justify-content-center'>
                         <div id='TaskContainer'>
                             <input type="text" id='Task' placeholder='Task name' />
+                            {/*icons imposing some weirdness about centering the element, gotta solve it with lateral margin or positioning*/} 
                             <FontAwesomeIcon id='PencilIcon' icon={faPen} />
                         </div>
 
                         <LycosTimer/>
-
-                        <button id='StartStopButton' className='btn btn-outline-light'>
-                            aaaa
-                        </button>
                     </main>
                 </div>
 

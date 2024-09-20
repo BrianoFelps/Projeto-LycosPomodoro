@@ -1,0 +1,3 @@
+Responsivity's not working well below 435px
+Logos size is weird
+Gotta do media-queries on MasterPage.tsx
