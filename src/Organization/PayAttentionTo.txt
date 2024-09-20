@@ -5,3 +5,5 @@ Do media-queries on MasterPage.tsx
 Add functions to sideBar button, switch button, editClock icon, and editTask icon
 
 Do the rest of the site down below
+
+API sync

@@ -78,7 +78,7 @@ export default function LycosTimer () {
             {/* <EditClockIcon onClickFct={}/> */}
 
             <button onClick={handleStartPause} id='StartStopButton' className='btn btn-outline-light mt-3'>
-                {isActive ? 'Pause' : 'Begin'}
+                {isActive ? 'Pause' : 'Focus!'}
             </button>
 
         </div>
