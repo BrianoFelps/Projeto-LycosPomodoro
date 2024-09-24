@@ -38,6 +38,10 @@
     transition: .5s;
 }
 
-#PhaseMenu input{
+#PhaseMenu button{
     width: 100px;
+}
+
+#PhaseMenu button.active{
+    background: #afafaf;
 }

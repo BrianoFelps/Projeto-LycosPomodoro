@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import './MasterPage.css';
 import LycosCompleteLogo from '../Components/LycosCompleteLogo';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
